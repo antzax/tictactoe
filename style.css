@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+  color: black;
+}
+
+.cell:hover {
+  border: 3px solid blue;
+}
+.gameboard {
+  display: grid;
+  border: 3px solid red;
+  grid: repeat(3, 100px) / repeat(3, 100px);
+  margin: 0 auto;
+}
